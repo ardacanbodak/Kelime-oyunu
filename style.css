@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    position: relative; /* Relative positioning for the body */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#oyunAlanı {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Maksimum genişlik */
+    padding: 20px;
+    background-color: #fff; /* Arka plan rengi */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgeler */
+    text-align: center;
+}
+
+#kelimeAlani {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#mesaj {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 1.2em;
+    padding: 5px;
+    width: 60px; /* Genişlik ayarı */
+    text-align: center;
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#gelenKelime {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+#klavye {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.klavye-tus {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.klavye-tus:active {
+    background-color: #ddd;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
